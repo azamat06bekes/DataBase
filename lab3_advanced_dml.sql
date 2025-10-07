@@ -43,15 +43,15 @@ VALUES
 INSERT INTO employees (emp_id, first_name, last_name, department, salary, hire_date, status)
 VALUES (107, 'Kamila', 'Alimova', 'Marketing', 50000 * 1.1, CURRENT_DATE, DEFAULT);
 
---  *** Дополнительные данные для UPDATE и DELETE ***
+--  *** Дополнительные данные ***
 INSERT INTO employees (emp_id, first_name, last_name, department, salary, hire_date, status) VALUES
--- Adil Sultanov - Зарплата > 60000 И дата найма до 2020-01-01 (для Задания 8)
+
 (3, 'Adil', 'Sultanov', 'IT', 75000, '2019-08-15', 'Active'),
--- Dana Myrzakhmet - Зарплата > 80000 (для Задания 9) и отдел Sales (для Задания 12)
+
 (4, 'Dana', 'Myrzakhmet', 'Sales', 95000, '2022-01-01', 'Active'),
--- Alua Zhumagalieva - Отдел Sales (для Задания 12)
+
 (5, 'Alua', 'Zhumagalieva', 'Sales', 65000, '2021-06-15', 'Active'),
--- Nurlan Kenesov - Для тестирования DELETE (Задание 13)
+
 (6, 'Nurlan', 'Kenesov', 'HR', 55000, '2020-03-25', 'Active');
 
 -- Ex.6
@@ -240,3 +240,5 @@ WHERE p.dept_id IN (
         WHERE e.department = d.dept_name
     ) > 3
 );
+
+SELECT * FROM employees;
